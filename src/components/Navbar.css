@@ -1,0 +1,9 @@
+.active {
+    color      : coral;
+    font-weight: bold;
+}
+
+.NotActive {
+    color      : darkmagenta;
+    font-weight: bold;
+}

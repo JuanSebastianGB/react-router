@@ -4,15 +4,15 @@ import AboutPage from './pages/AboutPage';
 import UserPage from './pages/UserPage';
 import NotFoundPage from './pages/NotFoundPage';
 import Navbar from './components/Navbar';
-export default function App() {
+export default function App () {
   return (
     <Router>
-      <Navbar></Navbar>
+      <Navbar />
       <Routes>
-        <Route path='/' element={<HomePage></HomePage>}></Route>
-        <Route path='/about' element={<AboutPage></AboutPage>}></Route>
-        <Route path='/users' element={<UserPage></UserPage>}></Route>
-        <Route path='*' element={<NotFoundPage></NotFoundPage>}></Route>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/about' element={<AboutPage />} />
+        <Route path='/users' element={<UserPage />} />
+        <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </Router>
   );
