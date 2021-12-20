@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 import UserPage from './pages/UserPage';
 import Dashboard from './pages/Dashboard';
 
-export default function App() {
+export default function App () {
   return (
     <Router>
       <Navbar />
@@ -19,9 +19,9 @@ export default function App() {
         <Route path='/usuarios2' element={<Navigate replace to='/users' />} />
         <Route path='/users/:id' element={<UserPage />} />
 
-        <Route path='/Dashboard/*' element={<Dashboard></Dashboard>}>
-          <Route path='welcome' element={<p>Welcome!!!!!</p>}></Route>
-          <Route path='goodbye' element={<p>Goodbye!!!!!</p>}></Route>
+        <Route path='/Dashboard/*' element={<Dashboard />}>
+          <Route path='welcome' element={<p>Welcome!!!!!</p>} />
+          <Route path='goodbye' element={<p>Goodbye!!!!!</p>} />
         </Route>
 
         <Route path='*' element={<NotFoundPage />} />
