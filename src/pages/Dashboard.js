@@ -1,4 +1,4 @@
-import { useNavigate, Route, Routes, Link } from "react-router-dom"
+import { useNavigate, Link, Outlet } from "react-router-dom"
 
 export default function Dashboard() {
     const navigate = useNavigate()
@@ -14,9 +14,11 @@ export default function Dashboard() {
             <Link to='welcome'>
                 Say welcome
             </Link>
-            <Routes>
-                <Route path='welcome' element={<p>Welcome!!!!!</p>}></Route>
-            </Routes>
+            <Link to='goodbye'>
+                Bye Bye
+            </Link>
+
+            <Outlet></Outlet>
         </div>
     )
 }
