@@ -3,10 +3,11 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import UserPage from './pages/UserPage';
 import NotFoundPage from './pages/NotFoundPage';
-
+import Navbar from './components/Navbar';
 export default function App() {
   return (
     <Router>
+      <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<HomePage></HomePage>}></Route>
         <Route path='/about' element={<AboutPage></AboutPage>}></Route>
