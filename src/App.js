@@ -1,17 +1,20 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import UserPage from './pages/UserPage';
+import UsersPage from './pages/UsersPage';
 import NotFoundPage from './pages/NotFoundPage';
 import Navbar from './components/Navbar';
-export default function App () {
+import UserPage from './pages/UserPage';
+
+export default function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
-        <Route path='/users' element={<UserPage />} />
+        <Route path='/users' element={<UsersPage />} />
+        <Route path='/users/:id' element={<UserPage />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </Router>
