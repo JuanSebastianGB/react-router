@@ -1,4 +1,5 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Route, Routes, Link } from "react-router-dom"
+
 export default function Dashboard() {
     const navigate = useNavigate()
     const handleClick = () => {
@@ -10,6 +11,12 @@ export default function Dashboard() {
             <button onClick={handleClick}>
                 Logout
             </button>
+            <Link to='welcome'>
+                Say welcome
+            </Link>
+            <Routes>
+                <Route path='welcome' element={<p>Welcome!!!!!</p>}></Route>
+            </Routes>
         </div>
     )
 }

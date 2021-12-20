@@ -18,7 +18,7 @@ export default function App() {
         <Route path='/usuarios' element={<Navigate to='/users' />} />
         <Route path='/usuarios2' element={<Navigate replace to='/users' />} />
         <Route path='/users/:id' element={<UserPage />} />
-        <Route path='/Dashboard' element={<Dashboard></Dashboard>}></Route>
+        <Route path='/Dashboard/*' element={<Dashboard></Dashboard>}></Route>
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </Router>
