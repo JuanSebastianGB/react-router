@@ -27,10 +27,19 @@ rm -rf node_modules
 npm i
 
 ```
-### Using Docker
+### Using Docker image
 This aplication is mounted in a docker image and can be used used easily like follow🧑 :
 ```
 docker run -p <any desired port>:80 --name <container name> -d juansebastiangb/react-router-demo
+```
+## Using docker compose to run in production either in develop mode
+### Production 🛬
+```
+docker-compose -f docker-compuse-prod.yml  up -d --build
+```
+### Development 🔨
+```
+docker-compose -f docker-compuse-dev.yml  up -d --build
 ```
 
 
