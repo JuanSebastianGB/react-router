@@ -27,4 +27,12 @@ rm -rf node_modules
 npm i
 
 ```
+### Using Docker
+This aplication is mounted in a docker image and can be used used easily like follow🧑 :
+```
+docker run -p <any desired port>:80 --name <container name> -d juansebastiangb/react-router-demo
+```
+
+
+
 
